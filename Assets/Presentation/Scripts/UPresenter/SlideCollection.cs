@@ -4,16 +4,56 @@ using System.Collections.Generic;
 
 public class SlideCollection : MonoBehaviour 
 {
-    public List<UGUISlide> slides = new List<UGUISlide>();
+    public List<Slide> slides = new List<Slide>();
 
-    public void NextSlide()
+    int slideIndex = 0;
+    Slide lastSlide;
+
+    void Awake()
     {
-
+        for(int i = 0 ; i < slides.Count ; i++)
+        {
+            slides[i].Deactivate();
+        }
     }
 
-    public void LastSlide()
+    public void ShowFirst()
     {
+        slideIndex = 0;
+        lastSlide = slides[slideIndex];
+        lastSlide.Activate();
+    }
 
+    public bool NextSlide()
+    {
+        if(slideIndex + 1 <= slides.Count - 1)
+        {
+            lastSlide.Deactivate();
+            slideIndex++;
+
+            lastSlide = slides[slideIndex];
+            lastSlide.Activate();
+
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool LastSlide()
+    {
+        if (slideIndex - 1 >= 0)
+        {
+            lastSlide.Deactivate();
+            slideIndex--;
+
+            lastSlide = slides[slideIndex];
+            lastSlide.Activate();
+
+            return true;
+        }
+
+        return false;
     }
 
 }

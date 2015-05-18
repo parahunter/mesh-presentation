@@ -2,15 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class UGUISlide : MonoBehaviour {
+public class UGUISlide : Slide 
+{
+    
+    public override void Deactivate()
+    {
+        gameObject.SetActive(false);
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public override void Activate()
+    {
+        gameObject.SetActive(true);
+    }
 }
