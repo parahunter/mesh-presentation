@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class SlideCollection : MonoBehaviour 
 {
-    public List<Slide> slides = new List<Slide>();
-
+    public List<Slide> slides;
     int slideIndex = 0;
     Slide lastSlide;
 
     void Awake()
     {
+                
         for(int i = 0 ; i < slides.Count ; i++)
         {
             slides[i].Deactivate();
