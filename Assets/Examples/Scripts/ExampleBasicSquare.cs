@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 public class ExampleBasicSquare : MonoBehaviour
 {
-    Mesh mesh;
+
 
     void Start()
     {
-        mesh = new Mesh();
+        Mesh mesh = new Mesh();
 
         //assign points
         Vector3[] vertices = new Vector3[4];
@@ -32,6 +32,8 @@ public class ExampleBasicSquare : MonoBehaviour
 
         GetComponent<MeshFilter>().mesh = mesh;
     }
+
+
 }
 
 
