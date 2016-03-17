@@ -19,9 +19,7 @@ public class ExampleTriangleWithNormals : MonoBehaviour
         mesh.vertices = vertices;
 
         Vector3[] normals = new Vector3[3];
-        normals[0] = Vector3.back;
-        normals[1] = Vector3.back;
-        normals[2] = Vector3.back;
+        normals[0] = Vector3.back; normals[1] = Vector3.back; normals[2] = Vector3.back;
         mesh.normals = normals;
 
         //assign triangles
