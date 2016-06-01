@@ -27,19 +27,19 @@ public class ExampleTriangleWithColors : MonoBehaviour
 
 	void Update()
 	{
-		Color[] colors = new Color[3];
+		Color32[] colors = new Color32[3];
 
 		float offset = Time.time * speed;
 
 		colors[0] = ColorFromHue(0 + offset);
 		colors[1] = ColorFromHue(120 + offset);
 		colors[2] = ColorFromHue(240 + offset);
-		
-		mesh.colors = colors;
+			
+		mesh.colors32 = colors;
 	}
 
 	//source https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSV
-	Color ColorFromHue(float h)
+	Color32 ColorFromHue(float h)
 	{
 		h = Mathf.Repeat(h, 360f);
 
@@ -48,8 +48,8 @@ public class ExampleTriangleWithColors : MonoBehaviour
 		float c = s * v;
 		
 		//HSV to RGB conversion
-		Color returnCol = new Color();
-		returnCol.a = 1.0f;
+		Color32 returnCol = new Color32();
+		returnCol.a = 255;
 
 		int i;
 		float f, p, q, t;
@@ -57,9 +57,9 @@ public class ExampleTriangleWithColors : MonoBehaviour
 		if (s == 0)
 		{
 			// achromatic (grey)
-			returnCol.r = v;
-			returnCol.g = v;
-			returnCol.b = v;
+			returnCol.r = (byte)(v * 255);
+			returnCol.g = (byte)(v * 255);
+			returnCol.b = (byte)(v * 255);
 			return returnCol;
 		}
 		
@@ -71,34 +71,34 @@ public class ExampleTriangleWithColors : MonoBehaviour
 		switch (i)
 		{
 			case 0:
-				returnCol.r = v;
-				returnCol.g = t;
-				returnCol.b = p;
+				returnCol.r = (byte)( v * 255);
+				returnCol.g = (byte)( t * 255);
+				returnCol.b = (byte)( p * 255);
 				break;
 			case 1:
-				returnCol.r = q;
-				returnCol.g = v;
-				returnCol.b = p;
+				returnCol.r = (byte)( q * 255);
+				returnCol.g = (byte)( v * 255);
+				returnCol.b = (byte)( p * 255);
 				break;
 			case 2:
-				returnCol.r = p;
-				returnCol.g = v;
-				returnCol.b = t;
+				returnCol.r = (byte)( p * 255);
+				returnCol.g = (byte)( v * 255);
+				returnCol.b = (byte)( t * 255);
 				break;
 			case 3:
-				returnCol.r = p;
-				returnCol.g = q;
-				returnCol.b = v;
+				returnCol.r = (byte)(p * 255);
+				returnCol.g = (byte)(q * 255);
+				returnCol.b = (byte)(v * 255);
 				break;
 			case 4:
-				returnCol.r = t;
-				returnCol.g = p;
-				returnCol.b = v;
+				returnCol.r = (byte)(t * 255);
+				returnCol.g = (byte)(p * 255);
+				returnCol.b = (byte)(v * 255);
 				break;
 			default:        // case 5:
-				returnCol.r = v;
-				returnCol.g = p;
-				returnCol.b = q;
+				returnCol.r = (byte)(v * 255);
+				returnCol.g = (byte)(p * 255);
+				returnCol.b = (byte)(q * 255);
 				break;
 		}
 
