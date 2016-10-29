@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 17351310}
   m_Layer: 0
   m_Name: LeftGroup
-  m_TagString: Untagged
+  m_TagString: BatchingTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,6 +202,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
   m_IsPrefabParent: 0
@@ -267,6 +271,10 @@ Prefab:
     - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
@@ -357,6 +365,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
   m_IsPrefabParent: 0
@@ -418,6 +430,10 @@ Prefab:
     - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
@@ -591,6 +607,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
   m_IsPrefabParent: 0
@@ -707,6 +727,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
   m_IsPrefabParent: 0
@@ -756,6 +780,10 @@ Prefab:
     - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
@@ -823,6 +851,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
   m_IsPrefabParent: 0
@@ -868,6 +900,10 @@ Prefab:
     - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
@@ -976,6 +1012,10 @@ Prefab:
     - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
@@ -1102,6 +1142,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6ec141e423c0ef46a377ffd284c2e2a, type: 3}
   m_IsPrefabParent: 0
@@ -1159,6 +1203,10 @@ Prefab:
     - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
@@ -1286,6 +1334,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
   m_IsPrefabParent: 0
@@ -1370,6 +1422,10 @@ Prefab:
     - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29339104c7d69b346a4f1585f2be81d8, type: 3}
@@ -1528,6 +1584,10 @@ Prefab:
     - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
+      propertyPath: m_TagString
+      value: BatchingTarget
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9fc1d48e3e9874da5b00cc4970419a, type: 3}
