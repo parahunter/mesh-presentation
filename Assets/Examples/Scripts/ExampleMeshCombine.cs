@@ -2,6 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//Example on how to use Mesh.Combine to reduce drawcalls
+//Please not that here I use the name of the mesh to determine if they can be combined together.
+//A more robust approach would be to see if two meshes share the same material in the same order but
+//to keep this simple I opted for using the name instead
 
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
@@ -27,8 +31,6 @@ public class ExampleMeshCombine : MonoBehaviour
 	void DoCombine()
 	{
 		GameObject[] combineTargets = GameObject.FindGameObjectsWithTag("BatchingTarget");
-			
-		print("number " + combineTargets.Length);
 		
 		List<CombinedMeshGroup> meshGroups = new List<CombinedMeshGroup>();
 		
@@ -37,14 +39,11 @@ public class ExampleMeshCombine : MonoBehaviour
 		{
 			MeshFilter meshFilter = combineTargets[i].GetComponent<MeshFilter>();
 
-			print("meshfilter name " + meshFilter.sharedMesh.name);
-
 			CombinedMeshGroup meshGroup = meshGroups.Find((mg) => mg.meshName == meshFilter.sharedMesh.name);
 
 			if (meshGroup != null)
 			{
 				meshGroup.meshFilters.Add(meshFilter);
-				print("combining");
 			}
 			else
 			{
@@ -69,11 +68,11 @@ public class ExampleMeshCombine : MonoBehaviour
 			{
 				combine[i].mesh = meshGroup.meshFilters[i].sharedMesh;
 				combine[i].transform = meshGroup.meshFilters[i].transform.localToWorldMatrix;
-				meshGroup.meshFilters[i].gameObject.SetActive(false);
+				Destroy(meshGroup.meshFilters[i].gameObject);
 				i++;
 			}
 
-			GameObject go = new GameObject("combined meshes - " + k);
+			GameObject go = new GameObject("combined mesh - " + meshGroup.meshName);
 			print(go.name);
 
 			go.transform.parent = transform;
@@ -85,5 +84,11 @@ public class ExampleMeshCombine : MonoBehaviour
 			MeshRenderer meshRenderer = go.AddComponent<MeshRenderer>();
 			meshRenderer.materials = meshGroup.materials;
 		}
+	}
+
+	void OnGUI()
+	{
+		GUILayout.Label("Press C to combine meshes");
+		GUILayout.Label("When you do you can see the amount of batches (draw calls) goes down");
 	}
 }
