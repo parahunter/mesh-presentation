@@ -3,13 +3,6 @@ using System.Collections;
 
 public class ExampleStaticBatchingUtility : MonoBehaviour
 {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
 	void Update ()
 	{
 		if(Input.GetKeyDown(KeyCode.B))
@@ -21,6 +14,7 @@ public class ExampleStaticBatchingUtility : MonoBehaviour
 	void OnGUI()
 	{
 		GUILayout.Label("Hit B to perform static batching. Note how it brings the batching count down");
+		GUILayout.Label("You will also see that if you try and move one of the game objects after they have been batched the mesh will stay at it's current location");
 	}
 
 	void DoCombine()
